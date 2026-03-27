@@ -1,0 +1,61 @@
+:root {
+  /* Background color */
+  --color-bg: #63ac69;
+
+  /* Header background color */
+  --color-head-bg: #573305;
+
+  /* Logotype */
+  --color-logotype-bg: #c59c13;
+  --color-text-logotype: #000000;
+  --font-logotype-size: 1rem;
+
+  /* Global menu */
+  --color-menu-bg: #c59c13;
+  /* Links */
+  --color-link-bg: #78766e;
+  --color-link-hover: #fff;
+  --color-link-active: #99958f;
+  --border-radius-links: 50px;
+
+  /* Headlines (size)*/
+  --font-h1-size: 1rem;
+  --font-h2-size: 1rem;
+  --font-h3-size: 1rem;
+
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --font-sub1-size: 1rem;
+
+  /* Headlines (color) */
+  --color-headline-bg: #c23434;
+
+  /* Tekst */
+  --color-text: #000;
+  --color-text-inverted: #cdccc4;
+
+  /* Andet tekst */
+  --followup-text-size: 1rem;
+
+  /*  Margins */
+  --margin-head-bottom: 5px;
+
+  /* Borders */
+  --border-radius: 5px;
+
+  /* Cards */
+  --color-card-bg: #c59c13;
+  --color-card-bg-inverted: #4d4e4f;
+  --color-cta-card-bg: #847f7e;
+  --color-cta-card-bg-inverted: #c0bfb9;
+
+  /* Fonts & font weights*/
+  --font-family-sans: ui-sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 300;
+  --font-weight-light: 200;
+
+  /* Infographics background colors*/
+  --color-info-bg: #676161;
+}
