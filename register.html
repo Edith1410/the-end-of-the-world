@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/forms.css">
   <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
@@ -23,7 +23,7 @@
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Survival Guide</a></li>
-        <li><a class="menuItem" href="register.html">Forms</a></li>
+        <li><a class="menuItem" href="register.html">Sign Up</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -34,13 +34,78 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
+    <h1>Sign Up</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
+        <h2>Sign up for ticets:</h2>
+        <p>Please fill all the boxes below.</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform">
+        <fieldset>
+          <legend>
+            <h2>Personal information</h2>
+          </legend>
+          <label for="name">Full Name</label>
+          <input id="name" type="text" name="name">
+          <p>Please enter a value</p>
+
+          <label for="age">Birthday</label>
+          <input id="age" type="date" name="age">
+          <p>Please Enter a value</p>
+
+          <label for="Weight">Weight</label>
+          <input id="Weight" type="number">
+          KG
+          <p>please enter a value</p>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Special Skills:</h2>
+          </legend>
+          <label for="physics">
+            <input type="checkbox" value="physics" name="skills" id="physics">
+            Physics
+          </label>
+
+          <label for="welding">
+            <input type="checkbox" value="welding" name="skills" id="welding">
+            Welding
+          </label>
+
+          <label for="reading">
+            <input type="checkbox" value="reading" name="skills" id="reading">
+            Reading
+          </label>
+
+          <label for="math">
+            <input type="checkbox" value="math" name="skills" id="math">
+            Mathmatics
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Do you currently have more than 1 billion Euros in the bank?</h2>
+          </legend>
+          <label for="yes">
+            <input type="radio" value="yes" name="money" id="yes">
+            Yes
+          </label>
+
+          <label for="no">
+            <input type="radio" value="no" name="money" id="no">
+            No
+          </label>
+        </fieldset>
+        <div>
+          <label for="comment">Why should you be picked?</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
     </section>
     <section id="form-summary">
       <h2>Summary</h2>
