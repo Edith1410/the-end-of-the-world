@@ -59,3 +59,15 @@
   /* Infographics background colors*/
   --color-info-bg: #676161;
 }
+/*CSS starter*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
