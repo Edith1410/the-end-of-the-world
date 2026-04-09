@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/forms.css">
   <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
@@ -23,7 +23,7 @@
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Survival Guide</a></li>
-        <li><a class="menuItem" href="register.html">Forms</a></li>
+        <li><a class="menuItem" href="register.html">Sign Up</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -34,18 +34,115 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
+    <h1>Sign Up</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
+        <h2>Sign up for tickets:</h2>
+        <p>Please fill all the boxes below.</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform" aria-label="Ticket sign-up form" name="webform">
+        <fieldset>
+          <legend>
+            <h2>Personal information</h2>
+          </legend>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input required id="name" type="text" name="name">
+            <p class="error-message">Please enter your Name</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input required id="email" type="email" name="email" aria-describedby="email-error">
+            <p class="error-message">Please enter a valid Email containing a @</p>
+          </div>
+          <div class="form-group">
+            <label for="age">Birthday</label>
+            <input required id="age" type="date" name="age">
+            <p class="error-message">Please enter a valid Date of birth</p>
+          </div>
+
+          <div class="form-group">
+            <label for="Weight">Weight</label>
+            <input required id="Weight" type="number" name="Weight">
+            KG
+            <p class="error-message">Please enter a valid Weight</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Special Skills:</h2>
+          </legend>
+          <div class="skillcheck">
+            <label for="physics">
+              <input type="checkbox" value="physics" name="skills" id="physics">
+              Physics
+            </label>
+          </div>
+          <div class="skillcheck">
+            <label for="welding">
+              <input type="checkbox" value="welding" name="skills" id="welding">
+              Welding
+            </label>
+          </div>
+          <div class="skillcheck">
+            <label for="reading">
+              <input type="checkbox" value="reading" name="skills" id="reading">
+              Reading
+            </label>
+          </div>
+          <div class="skillcheck">
+            <label for="math">
+              <input type="checkbox" value="math" name="skills" id="math">
+              Mathmatics
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Do you currently have more than 1 billion Euros in the bank?</h2>
+          </legend>
+          <div class="skillcheck">
+            <label for="yes">
+              <input type="radio" value="yes" name="money" id="yes">
+              Yes
+            </label>
+          </div>
+          <div class="skillcheck">
+            <label for="no">
+              <input type="radio" value="no" name="money" id="no">
+              No
+            </label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="comment">Why should you be picked?</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="terms">
+            <input aria-describedby="accept_terms-error" type="checkbox" id="terms" name="accept_terms" value="yes"
+              required />
+            Accept terms
+
+            <p class="error-message">Please tick the box</p>
+        </div>
+        <button>Submit</button>
+      </form>
     </section>
     <section id="form-summary">
       <h2>Summary</h2>
       <article>
-        <p class="placeholder">Opsummering</p>
+        <p class="placeholder">Full name: <span id="first_output"></span>
+        <p class="placeholder">Email: <span id="email_output"></span></p>
+        <p class="placeholder">Birtday: <span id="birth_output"></span></p>
+        <p class="placeholder">Weight: <span id="weight_output"></span></p>
+        <p class="placeholder">Special skills: <span id="skill_output"></span></p>
+        <p class="placeholder">Finance: <span id="money_output"></span></p>
+        <p class="placeholder">Comments: <span id="comment_output"></span></p>
+        <p class="placeholder">Terms accepted: <span id="terms_output"></span></p>
       </article>
     </section>
   </main>
@@ -71,6 +168,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

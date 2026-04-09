@@ -30,3 +30,81 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+button {
+  color: white;
+  border-radius: 20px;
+  border: solid #573305 2px;
+  background-color: #573305;
+  padding: 5px;
+  align-self: start;
+  max-width: 10rem;
+}
+button:hover {
+  background: rgb(0, 0, 0);
+}
+
+button:active {
+  scale: 0.98;
+}
+label {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+button {
+  cursor: pointer;
+}
+form {
+  accent-color: rgb(255, 98, 20);
+}
+input,
+textarea {
+  border: solid brown 2px;
+  border-radius: 2px;
+  padding: 5px;
+}
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+.form-group {
+  gap: 2px;
+  padding: 2px;
+}
+:focus-visible {
+  outline: 2px solid orange;
+  outline-offset: 1px;
+}
+
+/* adding the * at required questions */
+.form-group,
+.skillcheck:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+/* more space between checkboxes */
+.skillcheck {
+  padding: 2px;
+}
+/* error message only show up when needed*/
+.error-message {
+  display: none;
+}
+input:user-invalid {
+  border-color: red;
+  color: red;
+}
+
+input:user-invalid + .error-message {
+  display: block;
+}
+.error-message {
+  color: red;
+}
