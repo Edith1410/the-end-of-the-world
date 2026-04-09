@@ -1,3 +1,4 @@
+// Javascript til at gøre infografik interaktiv. vælg område og brug textContent til at teksten ændres når man trykker der:
 document.querySelector("#US").addEventListener("click", infoUS);
 function infoUS() {
   console.log("infoUS");
