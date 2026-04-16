@@ -33,21 +33,136 @@
     </nav>
   </header>
 
-  <main>
+  <main id="frontpage">
     <!-- Sektion med logo -->
+    <div id="top-section-wrapper">
 
-    <section id="top-section">
-      <img src="img/Logo.svg" alt="logo">
+      <section id="top-section">
+        <img class="logo" src="img/Logo.svg" alt="logo">
+        <div>
+          <h1>THE WORLD IS ENDING!</h1>
+          <p>Can/Will you survive?</p>
+        </div>
+      </section>
+    </div>
+
+    <div id="art-news-wrapper">
+      <!-- Sektion med artikler -->
       <div>
-        <h1>THE WORLD IS ENDING!</h1>
-        <p>Can you somehow survive it?</p>
+        <div>
+          <article id="left-side">
+            <div>
+              <img src="img/infografik.svg" alt="infografik">
+            </div>
+            <div>
+              <h2>Survival Guide</h2>
+              <p>Wondering what will happen to your country?</p>
+              <p>How is this </p>
+              <a href="instruction.html">Click here and find out</a>
+            </div>
+          </article>
+        </div>
+
+
+        <article id="left-side2">
+          <div>
+            <img src="img/Logo.svg" alt="logo">
+          </div>
+          <div>
+            <h2>Sign Up</h2>
+            <p>want a chance to get tickets?</p>
+            <a href="register.html">Click her and fill the form</a>
+          </div>
+        </article>
       </div>
-    </section>
-    <!-- Sektion med artikler -->
 
-    <!-- Section med breaking news -->
 
-    <!-- Sektion med accordin -->
+      <!-- Section med breaking news -->
+      <div>
+        <div>
+          <article id="news_card1">
+            <h2>BREAKING NEWS!</h2>
+            <h3>Hawaii goes up in flames</h3>
+            <img src="img/Hawaii.webp" alt="Hawaii">
+            <p>Read more about this important news</p>
+            <button popovertarget="news_popover1">Read more</button>
+          </article>
+        </div>
+
+        <!-- Nyheden -->
+        <div id="news_popover1" popover>
+          <button popovertarget="news_popover1">Luk</button>
+          <h4>Hawaii Devastated by Unprecedented Volcanic Eruptions and Tsunamis</h4>
+          <time class="newsDate">15. April 2025 - KL. 20:14</time>
+
+          <img src="img/Hawaii.webp" alt="Hawaii burning" />
+          <p>
+            Hawaii has been struck by a catastrophic wave of natural disasters, leaving widespread destruction across
+            the islands and thousands feared displaced.
+          </p>
+          <p>
+            Early yesterday morning, residents reported unusual ocean activity as waters receded dramatically along
+            the
+            coastline. Within hours, powerful earthquakes shook the region, triggering simultaneous volcanic
+            eruptions—most notably at Kīlauea, where massive lava flows rapidly engulfed nearby communities.
+          </p>
+          <p>
+            Authorities struggled to respond as ash clouds darkened the sky and infrastructure began to fail. Major
+            roads became impassable, and emergency services were overwhelmed by the scale of the crisis.
+            The situation worsened when seismic activity beneath the Pacific Ocean generated large tsunami waves that
+            struck coastal areas, destroying buildings and sweeping inland. In Honolulu, entire districts were
+            severely
+            damaged as floodwaters collided with advancing lava flows, creating hazardous steam explosions.
+            Officials have urged immediate evacuation where possible, though options remain limited due to ongoing
+            volcanic activity and damaged transport routes.
+          </p>
+          <p>
+            Experts describe the event as highly unusual, with multiple geological systems erupting at once. While
+            rescue efforts are underway, the full extent of the damage—and the potential loss of life—remains unclear.
+            Authorities continue to monitor the situation as aftershocks and eruptions persist.
+          </p>
+        </div>
+        <article id="news_card2">
+          <h3>Washington DC - President dead</h3>
+          <img src="img/Washington.webp" alt="Washington DC">
+          <p>Read more about this important news</p>
+          <button popovertarget="news_popover2">Read more</button>
+        </article>
+
+        <div id="news_popover2" popover>
+          <button popovertarget="news_popover2">Luk</button>
+          <h4>Massive Tsunami Devastates Washington Coast, Floodwaters Reach Inland Cities</h4>
+          <time class="newsDate">15. April 2025 - KL. 21:04</time>
+          <img src="img/Washington.webp" alt="Washinton DC" />
+          <p>
+            Washington State has been struck by a powerful tsunami following intense seismic activity off the Pacific
+            coast, causing widespread destruction and forcing mass evacuations.
+          </p>
+          <p>
+            The event began early this morning with a huge offshore earthquake that triggered immediate tsunami
+            warnings. Coastal communities had only minutes to react before waves—some towering over buildings—crashed
+            ashore, sweeping away homes, vehicles, and infrastructure.
+          </p>
+          <p>
+            Emergency sirens sounded across cities including Seattle, but evacuation efforts were hampered by traffic
+            congestion and limited escape routes. Eyewitnesses described walls of water surging through streets,
+            overwhelming waterfront districts and pushing far beyond expected flood zones.
+            Authorities report that the tsunami continued inland via rivers and low-lying areas, flooding neighborhoods
+            and crippling power and communication systems. In several areas, buildings were uprooted or submerged
+            entirely.
+          </p>
+          <p>
+            Rescue operations are underway, though officials warn conditions remain dangerous due to strong currents,
+            debris, and potential aftershocks. Residents have been urged to move to higher ground and avoid coastal
+            regions.
+            Experts say the scale and reach of the tsunami are unprecedented for the region, raising concerns about
+            long-term impacts on infrastructure and communities.
+            The full extent of casualties and damage is still being assessed as emergency crews continue search and
+            rescue efforts.
+          </p>
+        </div>
+      </div>
+      <!-- Sektion med accordin -->
   </main>
 
   <footer>
@@ -75,3 +190,7 @@
 </body>
 
 </html>
+
+<!-- <button popovertarget="popup">Open popup</button>
+
+</div>p -->
