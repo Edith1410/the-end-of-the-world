@@ -1,3 +1,7 @@
+html {
+  max-width: 70rem;
+  margin: 0 auto;
+}
 /* LAYOUT FOR MAIN CONTENT */
 body {
   display: grid;

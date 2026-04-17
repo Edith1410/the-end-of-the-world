@@ -1,3 +1,7 @@
+button {
+  content: " -> ";
+  margin-left: 8px;
+}
 #art-news-wrapper {
   display: grid;
   grid-template-columns: 4fr 3fr;
@@ -22,7 +26,6 @@
   border-radius: 20px;
   padding: 1rem 0;
   margin: 5px;
-  height: 14em;
 }
 h2 {
   background-color: var(--color-cta-card-bg);
@@ -36,7 +39,6 @@ h2 {
   border-radius: 20px;
   padding: 1rem 0;
   margin: 5px;
-  height: 14em;
 }
 #left-side3 {
   display: grid;
@@ -45,7 +47,6 @@ h2 {
   border-radius: 20px;
   padding: 1rem 0;
   margin: 5px;
-  height: 16em;
 }
 #left-side a,
 #left-side2 a,
@@ -58,6 +59,7 @@ h2 {
   color: black;
   list-style: none;
   text-decoration: none;
+  /* margin-left: 8px; */
 }
 /* popover css */
 [popover] {
@@ -145,5 +147,51 @@ h2 {
   margin-top: auto;
 }
 #logotype-wrapper a {
-  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+details {
+  border: 1px solid;
+}
+
+summary {
+  background: gainsboro;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+summary::marker {
+  content: none;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+summary::after {
+  content: "+";
+}
+
+[open] summary::after {
+  content: "-";
+}
+html {
+  interpolate-size: allow-keywords;
+}
+
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.5s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}
+.faq-section {
+  background-color: var(--color-card-bg);
+  border-radius: 20px;
 }

@@ -111,7 +111,7 @@ header > nav li > a:after {
 }
 /* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
-  background-color: var(--color-link-hover);
+  background-color: var(--color-bg);
 }
 nav a:active {
   background-color: var(--color-link-active);

@@ -108,3 +108,8 @@ input:user-invalid + .error-message {
 .error-message {
   color: red;
 }
+#logotype-wrapper a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
