@@ -38,9 +38,18 @@ h2 {
   margin: 5px;
   height: 15em;
 }
-
+#left-side3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: var(--color-card-bg);
+  border-radius: 20px;
+  padding: 1rem 0;
+  margin: 5px;
+  height: 15em;
+}
 #left-side a,
-#left-side2 a {
+#left-side2 a,
+#left-side3 a {
   background-color: var(--color-cta-card-bg);
   border-radius: 20px;
   padding: 10px;
