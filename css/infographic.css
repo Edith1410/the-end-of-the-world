@@ -55,3 +55,8 @@
   fill: yellow;
   filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.8));
 }
+#logotype-wrapper a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
