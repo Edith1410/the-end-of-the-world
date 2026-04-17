@@ -22,7 +22,7 @@
   border-radius: 20px;
   padding: 1rem 0;
   margin: 5px;
-  height: 15em;
+  height: 14em;
 }
 h2 {
   background-color: var(--color-cta-card-bg);
@@ -36,7 +36,7 @@ h2 {
   border-radius: 20px;
   padding: 1rem 0;
   margin: 5px;
-  height: 15em;
+  height: 14em;
 }
 #left-side3 {
   display: grid;
@@ -45,14 +45,15 @@ h2 {
   border-radius: 20px;
   padding: 1rem 0;
   margin: 5px;
-  height: 15em;
+  height: 16em;
 }
 #left-side a,
 #left-side2 a,
 #left-side3 a {
-  background-color: var(--color-cta-card-bg);
+  background-color: white;
   border-radius: 20px;
   padding: 10px;
+  border: solid black 2px;
   margin: 5px;
   color: black;
   list-style: none;
@@ -129,4 +130,20 @@ h2 {
 }
 #frontpage h1 {
   font-size: 2em;
+}
+
+#left-side > div:last-child,
+#left-side2 > div:last-child,
+#left-side3 > div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+#left-side a,
+#left-side2 a,
+#left-side3 a {
+  margin-top: auto;
+}
+#logotype-wrapper a {
+  height: fit-content;
 }
