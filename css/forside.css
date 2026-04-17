@@ -117,14 +117,14 @@ h2 {
   }
 }
 #news_card1,
-#news_card2,
-#news_card3 {
+#news_card2 {
   background-color: var(--color-card-bg);
   border-radius: 20px;
   margin: 5px;
   padding: 1rem;
   max-width: 20rem;
 }
+
 #art-news-wrapper button {
   border-radius: 15px;
   padding: 5px;
