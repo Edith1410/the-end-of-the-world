@@ -59,4 +59,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  border-radius: 20px;
+  padding: 2px;
+}
+p,
+a,
+button,
+aside {
+  font-family: Incon;
 }

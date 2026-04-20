@@ -8,5 +8,6 @@
 }
 @font-face {
   font-family: "Incon";
-  src: url(../fonts/Inconsolata-Regular.woff);
+  src: url(../fonts/Inconsolata-Regular.woff) format("woff");
+  font-style: normal;
 }
