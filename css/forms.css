@@ -116,6 +116,7 @@ input:user-invalid + .error-message {
   padding: 2px;
 }
 p,
-label {
+label,
+a {
   font-family: Incon;
 }
